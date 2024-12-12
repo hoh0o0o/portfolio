@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1083 1921">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: url(#_新規パターン);
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #3558b6;
+      }
+
+      .cls-5 {
+        fill: #f09730;
+      }
+    </style>
+    <pattern id="_新規パターン" data-name="新規パターン" x="0" y="0" width="100" height="90" patternTransform="translate(0 -1)" patternUnits="userSpaceOnUse" viewBox="0 0 100 90">
+      <g>
+        <rect class="cls-3" width="100" height="90"/>
+        <circle class="cls-1" cx="31.93" cy="19.98" r="4.93"/>
+        <circle class="cls-5" cx="68.07" cy="70.02" r="4.93"/>
+      </g>
+    </pattern>
+  </defs>
+  <rect class="cls-4" x="1" width="1082" height="1921"/>
+  <rect class="cls-2" y="0" width="1082" height="1921"/>
+</svg>
