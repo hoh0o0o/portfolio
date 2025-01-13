@@ -54,7 +54,11 @@ Please change the parent <Route path="${d}"> to <Route path="${d==="/"?"*":`${d}
                         height: auto;
                         max-width: 100%;
                       }
-                    `}),c.jsxs("svg",{id:"_レイヤー_2","data-name":"レイヤー_2",xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 168 168",className:"background-svg",children:[c.jsx("defs",{children:c.jsx("style",{children:`
+                      .mx-auto {
+                        margin-left: auto;
+                        margin-right: auto;
+                      }
+                    `}),c.jsxs("svg",{id:"_レイヤー_2","data-name":"レイヤー_2",xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 168 168",className:"background-svg mx-auto",children:[c.jsx("defs",{children:c.jsx("style",{children:`
                         .cls-1 {
                           fill: #556959;
                         }
