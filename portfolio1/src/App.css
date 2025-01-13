@@ -1,7 +1,225 @@
-.nav-link {
-  transition: letter-spacing 0.3s ease;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* 緑色の部分と同じ高さに変更 */
+  overflow: hidden;
+  z-index: -1;
 }
 
-.nav-link:hover {
-  letter-spacing: 0.1em;
+.background-svg {
+  width: 100%;
+  height: 100%;
+  animation: floatUp 25s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-50px) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100px) scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+.area {
+  background: #405745; /* 緑色に変更 */
+  background: -webkit-linear-gradient(
+    to left,
+    #405745,
+    #405745
+  ); /* 緑色のグラデーションに変更 */
+  width: 100%;
+  height: 100vh;
+}
+
+.green-area {
+  background: #405745; /* 背景色を緑に設定 */
+  height: 100vh; /* 高さを設定 */
+  position: relative;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 50px); /* 緑色の部分までの高さに変更 */
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: url("/ohana.svg") no-repeat center center; /* ohana.svgを背景に設定 */
+  background-size: contain; /* 画像を要素内に収める */
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+header {
+  border-bottom: 1px solid #e0e0e0; /* 薄い灰色の線を追加 */
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -23px; /* 下線の位置を2px上に調整 */
+  background: #405745; /* 下線の色をmainの緑に変更 */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  background: #405745; /* ホバー時の下線の色をbg-mainに変更 */
+}
+
+.top-link {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem; /* フォントサイズを小さく */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.top-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  background: #405745;
+  transition: width 0.3s ease;
+}
+
+.top-link:hover::after {
+  width: 100%;
+  background: #405745;
+}
+
+.footer-area {
+  background: #405745; /* 背景色を緑に設定 */
+  height: 100px; /* 高さを設定 */
+  position: relative;
+}
+
+.text-main {
+  white-space: nowrap; /* テキストが折り返されないようにする */
 }
