@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 168">
+  <defs>
+    <style>
+      .cls-1 {
+        fill:rgb(92, 110, 95); /* 色を変更 */
+      }
+
+      .cls-2 {
+        fill: #506555 /* 以前の■の色に変更 */
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー_1">
+    <g>
+      <g>
+        <g id="_x3C_リピートラジアル_x3E_">
+          <circle class="cls-2" cx="84" cy="134" r="34"/>
+        </g>
+        <g id="_x3C_リピートラジアル_x3E_-2" data-name="_x3C_リピートラジアル_x3E_">
+          <circle class="cls-2" cx="36.45" cy="99.45" r="34"/>
+        </g>
+        <g id="_x3C_リピートラジアル_x3E_-3" data-name="_x3C_リピートラジアル_x3E_">
+          <circle class="cls-2" cx="54.61" cy="43.55" r="34"/>
+        </g>
+        <g id="_x3C_リピートラジアル_x3E_-4" data-name="_x3C_リピートラジアル_x3E_">
+          <circle class="cls-2" cx="113.39" cy="43.55" r="34"/>
+        </g>
+        <g id="_x3C_リピートラジアル_x3E_-5" data-name="_x3C_リピートラジアル_x3E_">
+          <circle class="cls-2" cx="131.55" cy="99.45" r="34"/>
+        </g>
+      </g>
+      <circle class="cls-1" cx="84" cy="84" r="24"/>
+    </g>
+  </g>
+</svg>
