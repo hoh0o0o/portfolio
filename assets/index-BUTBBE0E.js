@@ -52,7 +52,7 @@ Please change the parent <Route path="${d}"> to <Route path="${d==="/"?"*":`${d}
                       .background-svg {
                         width: 100%;
                         height: auto;
-                        max-width: 200px; /* 必要に応じて最大幅を設定 */
+                        max-width: 100%;
                       }
                     `}),c.jsxs("svg",{id:"_レイヤー_2","data-name":"レイヤー_2",xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 168 168",className:"background-svg",children:[c.jsx("defs",{children:c.jsx("style",{children:`
                         .cls-1 {
