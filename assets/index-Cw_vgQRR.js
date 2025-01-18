@@ -60,8 +60,8 @@ Please change the parent <Route path="${d}"> to <Route path="${d==="/"?"*":`${d}
                       }
                       @media (max-width: 768px) {
                         .header-container {
-                          padding-left: 20px;
-                          padding-right: 20px;
+                          margin-left: 20px;
+                          margin-right: 20px;
                         }
                       }
                     `}),c.jsxs("svg",{id:"_レイヤー_2","data-name":"レイヤー_2",xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 168 168",className:"background-svg mx-auto",children:[c.jsx("defs",{children:c.jsx("style",{children:`
