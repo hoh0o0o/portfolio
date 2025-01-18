@@ -64,7 +64,7 @@ Please change the parent <Route path="${d}"> to <Route path="${d==="/"?"*":`${d}
                           margin-right: 20px;
                         }
                         .header-container nav {
-                          font-size: 0.875rem; /* 文字サイズを小さく */
+                          font-size: 0.9rem;
                         }
                       }
                     `}),c.jsxs("svg",{id:"_レイヤー_2","data-name":"レイヤー_2",xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 168 168",className:"background-svg mx-auto",children:[c.jsx("defs",{children:c.jsx("style",{children:`
